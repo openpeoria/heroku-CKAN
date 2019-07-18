@@ -1,1 +1,1 @@
-web: paster serve etc/ckan/production.ini
+web: paster serve production.ini

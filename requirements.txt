@@ -4,6 +4,8 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+
+setuptools==36.1
 -e git+https://github.com/ckan/ckan.git@ckan-2.8.3#egg=ckan
 argparse==1.4.0           # via ofs
 Babel==2.3.4              # via flask-babel

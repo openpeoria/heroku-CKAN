@@ -2,6 +2,7 @@
 .cookiecutter
 .ipynb_checkpoints/*
 examples/.ipynb_checkpoints/*
+venv/*
 
 # C extensions
 *.so

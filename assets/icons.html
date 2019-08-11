@@ -1,0 +1,26 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("") }}</h1>
+      <p>
+        {% trans %}
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-xs">
+      <h2 class="media-heading">{% block home_image_caption %}{{ _("") }}{% endblock %}</h2>
+      {% block home_image_content %}
+        <a class="media-image" href="#">
+          <img class="img-responsive" src="{{ h.url_for_static('/base/images/commnotext.png') }}" alt="Placeholder" width="100" height="100" />
+        </a>
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

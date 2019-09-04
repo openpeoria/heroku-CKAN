@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# summary: clone a github project
+#
+# usage: add-admin
+
+# echo "port=$PORT database_url=$DATABASE_URL"
+# paster --plugin=ckan user add admin port=$PORT database_url=$DATABASE_URL
+paster --plugin=ckan sysadmin add reubano email=rcummings@nerevu.com name=reubano port=$PORT database_url=$DATABASE_URL

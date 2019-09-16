@@ -3,4 +3,4 @@
 #
 # usage: add-admin
 
-paster --plugin=ckan db init -c production.ini port=$PORT database_url=$DATABASE_URL datastore_url=$HEROKU_POSTGRESQL_PINK_URL
+paster --plugin=ckan db init -c production.ini port=$PORT database_url=$DATABASE_URL datastore_write_url=$HEROKU_POSTGRESQL_PINK_URL datastore_read_url=$HEROKU_POSTGRESQL_GREEN_URL

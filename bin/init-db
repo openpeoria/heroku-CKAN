@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# summary: clone a github project
+#
+# usage: add-admin
+
+paster --plugin=ckan db init -c production.ini port=$PORT database_url=$DATABASE_URL datastore_url=$HEROKU_POSTGRESQL_PINK_URL

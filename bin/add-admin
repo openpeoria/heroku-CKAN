@@ -3,6 +3,5 @@
 #
 # usage: add-admin
 
-# echo "port=$PORT database_url=$DATABASE_URL"
-# paster --plugin=ckan user add admin port=$PORT database_url=$DATABASE_URL
-paster --plugin=ckan sysadmin add reubano email=rcummings@nerevu.com name=reubano port=$PORT database_url=$DATABASE_URL
+. bin/update-environ
+paster --plugin=ckan sysadmin add $ADMIN_USER email=$ADMIN_EMAIL name=$ADMIN_USER

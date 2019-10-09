@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# summary: initialize the database
+#
+# usage: init-db
+
+. bin/update-environ
+paster --plugin=ckan serve production.ini port=$PORT database_url=$DATABASE_URL datastore_write_url=$HEROKU_POSTGRESQL_PINK_URL datastore_read_url=$HEROKU_POSTGRESQL_GREEN_URL

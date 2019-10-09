@@ -6,7 +6,8 @@
 #
 
 setuptools==36.1
--e git+https://github.com/ckan/ckan.git@ckan-2.8.3#egg=ckan
+-e git+https://github.com/reubano/ckan.git#egg=ckan
+ckanext-heroku==0.5.0
 argparse==1.4.0           # via ofs
 Babel==2.3.4              # via flask-babel
 Beaker==1.9.0             # via pylons

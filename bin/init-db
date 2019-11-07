@@ -4,4 +4,4 @@
 # usage: init-db
 
 . bin/update-environ
-paster --plugin=ckan db init -c production.ini port=$PORT
+paster --plugin=ckan db init -c production.ini

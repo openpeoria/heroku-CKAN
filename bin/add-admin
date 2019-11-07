@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# summary: clone a github project
+#
+# usage: add-admin
+
+. bin/update-environ
+paster --plugin=ckan sysadmin add $ADMIN_USER email=$ADMIN_EMAIL name=$ADMIN_USER

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# summary: clone a github project
+#
+# usage: add-datastore
+
+# heroku pg:psql HEROKU_POSTGRESQL_PINK_URL -c "\set ON_ERROR_STOP=1"
+# heroku pg:psql HEROKU_POSTGRESQL_GREEN_URL -c "\set ON_ERROR_STOP=1"
+. bin/update-environ
+paster --plugin=ckan datastore set-permissions -c production.ini
+

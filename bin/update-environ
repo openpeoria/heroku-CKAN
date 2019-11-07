@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# summary: updates environment variables (used when testing locally and not on heroku)
+#
+# usage: update-environ
+
+if [ -z "$DATABASE_URL" ]; then
+    export PORT=5000
+    export DATABASE_URL=postgresql://ckan_default:password@localhost/ckan_default
+    export HEROKU_POSTGRESQL_PINK_URL=postgresql://ckan_default:password@localhost/datastore_default
+    export HEROKU_POSTGRESQL_GREEN_URL=postgresql://datastore_default:password@localhost/datastore_default
+fi

@@ -12,7 +12,7 @@ CKAN based Peoria Open Data Portal
 from __future__ import (
     absolute_import, division, print_function, unicode_literals)
 
-__version__ = '0.7.5'
+__version__ = '0.8.0'
 
 __author__ = 'Reuben Cummings'
 __description__ = 'CKAN based Peoria Open Data Portal'
